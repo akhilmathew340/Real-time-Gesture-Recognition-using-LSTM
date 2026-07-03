@@ -1,23 +1,23 @@
 # Real-time-Gesture-Recognition-using-LSTM
 Real-time gesture recognition using LSTM, MediaPipe Holistic, OpenCV, and TensorFlow for dynamic human gesture classification.
 
-
 ## Overview
 
-This project implements a real-time Gesture Recognition system using Long Short-Term Memory (LSTM) networks and MediaPipe Holistic. The system captures body, hand, and facial landmarks from live webcam input and classifies dynamic gestures using a trained deep learning model.
+This project presents a real-time Gesture Recognition system developed using Long Short-Term Memory (LSTM) networks, MediaPipe Holistic, OpenCV, and TensorFlow. The system captures human body and hand landmarks from a live webcam feed, processes sequential keypoint data, and predicts predefined gestures in real time.
 
-The project demonstrates the application of computer vision and deep learning techniques for human gesture recognition, enabling touchless interaction and intelligent human-computer interfaces.
+The project demonstrates the application of deep learning and computer vision techniques for human gesture recognition, enabling intelligent human-computer interaction through dynamic hand gestures.
 
 ---
 
 ## Features
 
 - Real-time gesture recognition using webcam
-- Human pose, face, and hand landmark detection
-- LSTM-based sequence classification
-- Dynamic gesture prediction
+- Human pose and hand landmark detection
+- Sequential gesture prediction using LSTM
+- MediaPipe Holistic landmark extraction
+- Deep learning-based gesture classification
 - Live prediction visualisation
-- Deep learning model training and evaluation
+- Automated gesture recognition pipeline
 
 ---
 
@@ -27,7 +27,7 @@ The project demonstrates the application of computer vision and deep learning te
 - TensorFlow
 - Keras
 - OpenCV
-- MediaPipe
+- MediaPipe Holistic
 - NumPy
 - Matplotlib
 - Scikit-learn
@@ -36,12 +36,13 @@ The project demonstrates the application of computer vision and deep learning te
 
 ## Project Workflow
 
-1. Capture live webcam input
-2. Detect body, face, and hand landmarks using MediaPipe Holistic
+1. Capture real-time webcam input
+2. Detect pose and hand landmarks using MediaPipe Holistic
 3. Extract sequential keypoints
-4. Train the LSTM model
-5. Perform gesture prediction
-6. Display real-time recognised gestures
+4. Create and preprocess the gesture dataset
+5. Train the LSTM model
+6. Predict gestures in real time
+7. Display live gesture recognition results
 
 ---
 
@@ -49,29 +50,32 @@ The project demonstrates the application of computer vision and deep learning te
 
 Model Architecture:
 
-- LSTM Layer (64 units)
-- LSTM Layer (128 units)
-- LSTM Layer (64 units)
-- Dense Layer (64 units)
-- Dense Layer (32 units)
+- LSTM Layer
+- Dense Hidden Layers
 - Softmax Output Layer
 
-Optimizer:
-- Adam
+Frameworks Used:
 
-Loss Function:
-- Categorical Crossentropy
+- TensorFlow
+- Keras
+
+---
+
+## Results
+
+The developed system successfully recognises predefined hand gestures in real time by analysing sequential body and hand landmark data. MediaPipe Holistic is used to extract keypoints, while the LSTM network classifies gesture sequences, demonstrating the effectiveness of deep learning for real-time gesture recognition.
 
 ---
 
 ## Applications
 
 - Human-Computer Interaction
-- Gesture-Based Control Systems
+- Touchless Control Systems
+- Sign Language Assistance
 - Smart Automation
-- Assistive Technology
-- Touchless Interfaces
 - Healthcare Applications
+- Robotics
+- Virtual Reality and Gaming
 
 ---
 
@@ -79,9 +83,10 @@ Loss Function:
 
 - Support additional gesture classes
 - Improve prediction accuracy using larger datasets
-- Integrate with IoT devices
-- Deploy as a web application
-- Mobile application integration
+- Convert recognised gestures into speech or text
+- Deploy as a web or mobile application
+- Integrate with IoT and smart devices
+- Enhance performance for real-time deployment
 
 ---
 
@@ -90,3 +95,6 @@ Loss Function:
 **Akhil Mathew Cherian**
 
 MSc Data Science | Data Analytics | Machine Learning | Deep Learning
+
+
+
